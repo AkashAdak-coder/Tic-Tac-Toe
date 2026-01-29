@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+h1{
+    color: #e5d9f2;
+}
+.container{
+    height: 100vmin;
+    background-color: #e07a5f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.game .btn{
+    height: 18vmin;
+    width: 18vmin;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffdccc;
+    color: #720026;
+    font-size: 5.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#reset-btn{
+    height: 5vmin;
+    width: 15vmin;
+    font-size: 1.2rem;
+    color: #5d2a42;
+    border: none;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+    background-color: #e2d8f3;
+}
+.msg-container{
+    height: 100vmin;
+    background-color: #e07a5f;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#msg{
+    font-size: 4rem;
+    color: #f4f46ed2;
+}
+.msg-container .new{
+    border: none;
+    border-radius: 10px;
+    height: 8vmin;
+    width: 14vmin;
+    font-size: 0.8rem;
+    color: white;
+    background-color: black;
+}
+.display{
+    display: none;
+}
+@media (max-width: 532px) {
+
+    h1{
+        font-size: 1.8rem;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .game{
+        height: 85vmin;
+        width: 85vmin;
+        gap: 0.6rem;
+    }
+
+    .game .btn{
+        height: 26vmin;
+        width: 26vmin;
+        font-size: 3.5rem;
+        border-radius: 8px;
+    }
+
+    #reset-btn{
+        height: auto;
+        width: auto;
+        padding: 0.6rem 1.4rem;
+        font-size: 1rem;
+    }
+    
+    .msg-container{
+        height: 103vh;
+    }
+
+    #msg{
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .msg-container .new{
+        height: auto;
+        width: auto;
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+@media (min-width: 533px) and (max-width: 876px) {
+
+    h1{
+        font-size: 2.4rem;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .game{
+        height: 70vmin;
+        width: 70vmin;
+        gap: 0.8rem;
+    }
+
+    .game .btn{
+        height: 21vmin;
+        width: 21vmin;
+        font-size: 4.5rem;
+        border-radius: 10px;
+    }
+
+    #reset-btn{
+        height: auto;
+        width: auto;
+        padding: 0.6rem 1.6rem;
+        font-size: 1.1rem;
+    }
+
+    .msg-container{
+        height: 103vh;
+    }
+
+    #msg{
+        font-size: 2.8rem;
+        text-align: center;
+    }
+
+    .msg-container .new{
+        height: auto;
+        width: auto;
+        padding: 0.7rem 1.6rem;
+        font-size: 1rem;
+    }
+}
